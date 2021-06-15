@@ -117,24 +117,26 @@ a {
 
 /* FILTRES */
 
+/* placement de la barre de filtre */
 .texte_centre {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* placement de la barre de filtre a gauche */
-
+/* marge exterieur entre la barre de recherche et la barre de filtre */
 .marge_filtre {
   margin-top: 50px;
   margin-bottom: 40px;
 }
 
+/* alignement de la barre de filtre */
 .filtre {
   display: flex;
   align-items: center;
 }
 
+/* placement du titre filtre */
 .filtreh2 {
   margin-right: 20px;
   font-family: "ralewaybold";
@@ -142,6 +144,7 @@ a {
   margin: 20px;
 }
 
+/* placement de bordure des différents filtres */
 .filtre_texte {
   border: 2px solid #f2f2f2;
   height: 50px;
@@ -149,6 +152,7 @@ a {
   margin-right: 20px;
 }
 
+/* passage au survole de la souris */
 .filtre_texte:hover > .couleur_texte {
   color: #0065fc;
 }
@@ -158,13 +162,17 @@ a {
   background-color: #0065fc;
 }
 
+/* placement du texte centrage */
 .couleur_texte {
   height: 50px;
   padding-right: 20px;
   padding-left: 20px;
   border-radius: 0 25px 25px 0;
+  color: black;
+  font-family: "ralewaybold";
 }
 
+/* placement des icone et centrage */
 .logo_icon {
   margin-left: -2px;
   border-radius: 25px;
@@ -174,4 +182,153 @@ a {
   background-color: #deebff;
   text-align: center;
   padding-top: 17px;
+}
+
+/* INFO */
+
+/* alignement et marge extérieur */
+.info {
+  display: flex;
+  align-items: center;
+  margin-top: -20px;
+}
+
+/* bordure du logo et marge extérieur et interieur du logo */
+.info_logo {
+  color: #0065fc;
+  width: 13px;
+  height: 17px;
+  border: 2px solid #f2f2f2;
+  border-radius: 25px;
+  margin-right: 5px;
+  margin: 20px;
+  padding-left: 8px;
+  padding-top: 4px;
+}
+
+/*couleur titre */
+.titreinfo {
+  font-size: 1em;
+}
+
+/*  SECTION HEBERGEMENT */
+
+/* images espacé equitablement */
+#Heb_pop {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* fond du bloc hebergements */
+.bloc_heb {
+  flex: 2;
+  height: 650px;
+  margin-right: 20px;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* fond du bloc populaire */
+.bloc_pop {
+  flex: 1;
+  height: 650px;
+  margin-left: 20px;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+}
+
+/* modif taille et postionnement photos */
+.imageshebergements1 {
+  background-image: url("imageshebergements/aubergecannebiere.jpg");
+  width: 100%;
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px 15px 0 0;
+}
+
+.imageshebergements2 {
+  background-image: url("imageshebergements/hotelport.jpg");
+  width: 100%;
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px 15px 0 0;
+}
+
+.imageshebergements3 {
+  background-image: url("imageshebergements/hotelmouettes.jpg");
+  width: 100%;
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px 15px 0 0;
+}
+
+.imageshebergements4 {
+  background-image: url("imageshebergements/hotelmer.jpg");
+  width: 100%;
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px 15px 0 0;
+}
+
+.imageshebergements5 {
+  background-image: url("imageshebergements/aubergepanier.jpg");
+  width: 100%;
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px 15px 0 0;
+}
+
+.imageshebergements6 {
+  background-image: url("imageshebergements/hotelamina.jpg");
+  width: 100%;
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px 15px 0 0;
+}
+
+/* ligne haute et ligne de basse */
+.ligne1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/* le cadre blanc et alignement description */
+.cadre_blanch {
+  width: 30%;
+  height: auto;
+  background-color: white;
+  padding: 1%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* alignement legèrement décalé entre descriptions et photos */
+.description_h {
+  width: 90%;
+}
+
+#gras {
+  font-family: "ralewaybold";
+}
+
+.titreh2 {
+  font-family: "ralewaybold";
 }
