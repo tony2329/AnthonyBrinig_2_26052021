@@ -241,6 +241,11 @@ a {
   margin-left: 20px;
   border-radius: 10px;
   background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* modif taille et postionnement photos */
@@ -331,4 +336,184 @@ a {
 
 .titreh2 {
   font-family: "ralewaybold";
+}
+
+/* BLOC POPULAIRE */
+.icon_pop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.imagespopulaires1 {
+  background-image: url("imagespopulaires/hotelsoleil.jpg");
+  width: 35%;
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px 0 0 15px;
+}
+
+.imagespopulaires2 {
+  background-image: url("imagespopulaires/aucoeurdeleau.jpg");
+  width: 35%;
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px 0 0 15px;
+}
+
+.imagespopulaires3 {
+  background-image: url("imagespopulaires/hotelbleublanc.jpg");
+  width: 35%;
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px 0 0 15px;
+}
+
+.pop_centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cadre_blancp {
+  height: auto;
+  background-color: white;
+  padding: 1% 0 1% 1%;
+  border-radius: 20px;
+}
+
+.soleil {
+  width: 60%;
+  padding-left: 5%;
+}
+
+.bleublanc {
+  width: 60%;
+  padding-left: 5%;
+}
+
+.eau_chambre {
+  width: 60%;
+  padding-left: 5%;
+}
+
+/* BLOC ACTIVITÉ */
+
+#Activites {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* class général */
+.bloc_activites {
+  width: 100%;
+  height: 600px;
+}
+
+.bloc_activites2356 {
+  width: 23%;
+  height: 600px;
+}
+
+.flex_between_act {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.display_column_act {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex_column_between_act {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* reglage bloc */
+.cadre_blanc_act {
+  width: 23%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 1px #f2f2f2;
+}
+
+.img2356 {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 1px #f2f2f2;
+}
+
+.hauteur_titre_act {
+  height: 70px;
+}
+
+.titre_act {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 5%;
+  width: 95%;
+}
+
+.imagesactivites1 {
+  background-image: url("imagesactivitesM/vieuxport.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 530px;
+}
+
+.imagesactivites2 {
+  background-image: url("imagesactivitesM/fortpomegues.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 250px;
+}
+
+.imagesactivites3 {
+  background-image: url("imagesactivites/ilesfrioul.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 150px;
+}
+
+.imagesactivites4 {
+  background-image: url("imagesactivitesM/parcdescalanques.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 530px;
+}
+
+.imagesactivites5 {
+  background-image: url("imagesactivites/notredame.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 200px;
+}
+
+.imagesactivites6 {
+  background-image: url("imagesactivites/parclongchamp.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 200px;
 }
