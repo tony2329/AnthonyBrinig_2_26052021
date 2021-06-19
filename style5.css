@@ -213,6 +213,11 @@ a {
 
 /*  SECTION HEBERGEMENT */
 
+.titre_heb {
+  color: black;
+  font-family: "ralewaybold";
+}
+
 /* images espacé equitablement */
 #Heb_pop {
   display: flex;
@@ -339,6 +344,16 @@ a {
 }
 
 /* BLOC POPULAIRE */
+
+.titre_pop {
+  color: black;
+  font-family: "ralewaybold";
+}
+
+.p_pop {
+  color: black;
+}
+
 .icon_pop {
   display: flex;
   justify-content: space-between;
@@ -390,42 +405,49 @@ a {
 .soleil {
   width: 60%;
   padding-left: 5%;
+  color: black;
 }
 
 .bleublanc {
   width: 60%;
   padding-left: 5%;
+  color: black;
 }
 
 .eau_chambre {
   width: 60%;
   padding-left: 5%;
+  color: black;
 }
 
 /* BLOC ACTIVITÉ */
 
+/* la marge entre le haut et le bas du site */
 #Activites {
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
-/* class général */
+/* class général div principal */
 .bloc_activites {
   width: 100%;
   height: 600px;
 }
 
+/* les bloc des petite photo */
 .bloc_activites2356 {
   width: 23%;
   height: 600px;
 }
 
+/* le placement de la div principal activité (total) */
 .flex_between_act {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* class spécifique pour chaque photo (centrage du titre et photo) */
 .display_column_act {
   display: flex;
   flex-direction: column;
@@ -433,6 +455,7 @@ a {
   align-items: center;
 }
 
+/* placement des 2 photos dans chaque div */
 .flex_column_between_act {
   display: flex;
   flex-direction: column;
@@ -446,24 +469,30 @@ a {
   box-shadow: 5px 5px 5px 1px #f2f2f2;
 }
 
+/* les petites images activités */
 .img2356 {
   width: 100%;
   border-radius: 15px;
   box-shadow: 5px 5px 5px 1px #f2f2f2;
 }
 
+/* aggrandissement de la div titre */
 .hauteur_titre_act {
   height: 70px;
 }
 
+/*le titre h3 sous texte photo*/
 .titre_act {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding-left: 5%;
   width: 95%;
+  color: black;
+  font-family: "ralewaybold";
 }
 
+/* les différentes immages */
 .imagesactivites1 {
   background-image: url("imagesactivitesM/vieuxport.jpg");
   background-size: cover;
@@ -516,4 +545,48 @@ a {
   border-radius: 15px 15px 0 0;
   width: 100%;
   height: 200px;
+}
+
+/* FOOTER */
+
+#footer {
+  margin-top: 100px;
+  height: 300px;
+  width: 100%;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.puce {
+  list-style-type: none;
+  padding: 2px 0;
+}
+
+#a_propos {
+  margin-left: 2%;
+  height: 150px;
+}
+
+#nos_hebergements {
+  height: 150px;
+  margin-right: 8%;
+}
+
+#assistance {
+  height: 150px;
+  margin-right: 18%;
+}
+
+.couleur_footer {
+  color: black;
+}
+
+.titre_footer {
+  font-family: "ralewaybold";
+}
+
+.marge_li_footer {
+  margin-top: 10px;
 }
