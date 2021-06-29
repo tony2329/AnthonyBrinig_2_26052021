@@ -12,6 +12,14 @@
   font-family: "raleway";
 }
 
+/* evite que les marge et padding prenne plus de place */
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 /* ligne en dessous du lien enlevé */
 a {
   text-decoration: none;
@@ -219,8 +227,8 @@ a {
   font-family: "ralewaybold";
   line-height: 1px;
   margin-left: 11px;
-  margin-bottom: 12px;
-  padding-top: 16px;
+  margin-bottom: 18px;
+  padding-top: 18px;
 }
 
 /* le titre hebergement */
@@ -266,56 +274,45 @@ a {
 
 /* modif taille et postionnement photos */
 .imageshebergements1 {
-  background-image: url("imageshebergements/aubergecannebiere.jpg");
+  image-rendering: pixelated;
   width: 100%;
   height: 120px;
-  background-size: cover;
-  background-position: center;
   border-radius: 15px 15px 0 0;
 }
 
 .imageshebergements2 {
-  background-image: url("imageshebergements/hotelport.jpg");
+  image-rendering: pixelated;
   width: 100%;
   height: 120px;
-  background-size: cover;
-  background-position: center;
   border-radius: 15px 15px 0 0;
 }
 
 .imageshebergements3 {
-  background-image: url("imageshebergements/hotelmouettes.jpg");
+  image-rendering: pixelated;
   width: 100%;
   height: 120px;
-  background-size: cover;
-  background-position: center;
   border-radius: 15px 15px 0 0;
 }
 
 .imageshebergements4 {
-  background-image: url("imageshebergements/hotelmer.jpg");
+  image-rendering: pixelated;
   width: 100%;
   height: 120px;
-  background-size: cover;
-  background-position: center;
   border-radius: 15px 15px 0 0;
 }
 
 .imageshebergements5 {
-  background-image: url("imageshebergements/aubergepanier.jpg");
+  text-align: center;
+  image-rendering: pixelated;
   width: 100%;
   height: 120px;
-  background-size: cover;
-  background-position: center;
   border-radius: 15px 15px 0 0;
 }
 
 .imageshebergements6 {
-  background-image: url("imageshebergements/hotelamina.jpg");
+  image-rendering: pixelated;
   width: 100%;
   height: 120px;
-  background-size: cover;
-  background-position: center;
   border-radius: 15px 15px 0 0;
 }
 
@@ -355,6 +352,12 @@ a {
   align-items: center;
 }
 
+/* zoom lors du survole des photos */
+.cadre_blanch:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 /* alignement legèrement décalé entre descriptions et photos */
 .description_h {
   width: 90%;
@@ -389,7 +392,7 @@ a {
   align-items: center;
   margin-left: 20px;
   margin-right: 20px;
-  padding-top: 45px;
+  padding-top: 47px;
 }
 
 /* bonne alignement des trois images */
@@ -406,29 +409,23 @@ a {
 }
 
 .imagespopulaires1 {
-  background-image: url("imagespopulaires/hotelsoleil.jpg");
+  image-rendering: pixelated;
   width: 35%;
   height: 150px;
-  background-size: cover;
-  background-position: center;
   border-radius: 15px 0 0 15px;
 }
 
 .imagespopulaires2 {
-  background-image: url("imagespopulaires/aucoeurdeleau.jpg");
+  image-rendering: pixelated;
   width: 35%;
   height: 150px;
-  background-size: cover;
-  background-position: center;
   border-radius: 15px 0 0 15px;
 }
 
 .imagespopulaires3 {
-  background-image: url("imagespopulaires/hotelbleublanc.jpg");
+  image-rendering: pixelated;
   width: 35%;
   height: 150px;
-  background-size: cover;
-  background-position: center;
   border-radius: 15px 0 0 15px;
 }
 
@@ -443,6 +440,12 @@ a {
   background-color: white;
   padding: 1% 0 1% 1%;
   border-radius: 20px;
+}
+
+/* zoom lors du survole des photos */
+.cadre_blancp:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 .lien_pop {
@@ -514,11 +517,23 @@ a {
   box-shadow: 5px 5px 5px 1px #f2f2f2;
 }
 
+/* zoom lors du survole des photos 1 et 4 */
+.cadre_blanc_act:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
 /* les petites images activités */
 .img2356 {
   width: 100%;
   border-radius: 15px;
   box-shadow: 5px 5px 5px 1px #f2f2f2;
+}
+
+/* zoom lors du survole des photos 2356 */
+.img2356:hover {
+  cursor: pointer;
+  transform: scale(1.03);
 }
 
 /* aggrandissement de la div titre */
@@ -539,54 +554,42 @@ a {
 
 /* les différentes immages */
 .imagesactivites1 {
-  background-image: url("imagesactivitesM/vieuxport.jpg");
-  background-size: cover;
-  background-position: center;
+  image-rendering: pixelated;
   border-radius: 15px 15px 0 0;
   width: 100%;
-  height: 530px;
+  height: 526px;
 }
 
 .imagesactivites2 {
-  background-image: url("imagesactivitesM/fortpomegues.jpg");
-  background-size: cover;
-  background-position: center;
+  image-rendering: pixelated;
   border-radius: 15px 15px 0 0;
   width: 100%;
   height: 250px;
 }
 
 .imagesactivites3 {
-  background-image: url("imagesactivites/ilesfrioul.jpg");
-  background-size: cover;
-  background-position: center;
+  image-rendering: pixelated;
   border-radius: 15px 15px 0 0;
   width: 100%;
   height: 150px;
 }
 
 .imagesactivites4 {
-  background-image: url("imagesactivitesM/parcdescalanques.jpg");
-  background-size: cover;
-  background-position: center;
+  image-rendering: pixelated;
   border-radius: 15px 15px 0 0;
   width: 100%;
-  height: 530px;
+  height: 526px;
 }
 
 .imagesactivites5 {
-  background-image: url("imagesactivites/notredame.jpg");
-  background-size: cover;
-  background-position: center;
+  image-rendering: pixelated;
   border-radius: 15px 15px 0 0;
   width: 100%;
   height: 200px;
 }
 
 .imagesactivites6 {
-  background-image: url("imagesactivites/parclongchamp.jpg");
-  background-size: cover;
-  background-position: center;
+  image-rendering: pixelated;
   border-radius: 15px 15px 0 0;
   width: 100%;
   height: 200px;
@@ -594,6 +597,7 @@ a {
 
 /* FOOTER */
 
+/* le fond du footeur avec les propriétés associés */
 #footer {
   margin-top: 100px;
   height: 300px;
@@ -604,34 +608,65 @@ a {
   align-items: center;
 }
 
+/* enlever les puces et marge */
 .puce {
   list-style-type: none;
   padding: 2px 0;
 }
 
+/* la partie a propos */
 #a_propos {
   margin-left: 2%;
   height: 150px;
 }
 
+/* la partie hébergement */
 #nos_hebergements {
   height: 150px;
   margin-right: 8%;
 }
 
+/* la partie assistance */
 #assistance {
   height: 150px;
   margin-right: 18%;
 }
 
+
 .couleur_footer {
   color: black;
 }
 
+/* les titres en gras */
 .titre_footer {
   font-family: "ralewaybold";
 }
 
+/* la marge en les différents liens */
 .marge_li_footer {
   margin-top: 10px;
 }
+
+/* MEDIA QUERIES (TOUJOURS METTRE A LA FIN DU CSS) */
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  /* Styles */
+
+  #Heb_pop {
+    flex-direction: column-reverse;
+  }
+
+
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  /* Styles */
+
+  #Heb_pop {
+    flex-direction: column-reverse;
+  }
+
+  }
+ 
