@@ -1117,10 +1117,69 @@ form button i::after {
     padding-bottom: 10px;
   }
 
+  /* marge entre les 2 colonnes (haut et bas) */
+  .ligne2 {
+    margin-top: 10px;
+  }
+
   /* titre hebergements */
   #Hebergements {
     margin-left: 27px;
   }
 
   /* BLOC ACTIVITÉ */
+
+  #Activites {
+    margin-left: -10px;
+  }
+
+  /* marge des images 1 et 2 */
+  .display_column_act {
+    margin-bottom: 90px;
+  }
+  /* largeur des photos */
+  .bloc_activites2356 {
+    width: 60%;
+    padding-left: 20px;
+    justify-content: center;
+  }
+
+  /* position de l'image parc national des calanques en bas pour alignement */
+  .position_haute {
+    align-self: flex-start;
+    margin-right: -220px;
+  }
+
+  /* position de l'image vieux port en haut pour alignement */
+  .position_bas {
+    align-self: flex-end;
+    margin-left: 0px;
+  }
+
+  /* ordre des photos changer pour la 1er et 4ème */
+  .cadre_blanc_act {
+    order: -1;
+  }
+
+  /* repositionnement des images */
+  .flex_between_act {
+    flex-direction: row;
+  }
+
+  /* largeur des images */
+  .imagesactivites1 {
+    width: 220px;
+  }
+
+  /* largeur des images */
+  .imagesactivites4 {
+    width: 220px;
+  }
+
+  /* marge et largeur des autres images */
+  .img2356 {
+    width: 210px;
+    margin-bottom: 57px;
+    margin-top: -14px;
+  }
 }
