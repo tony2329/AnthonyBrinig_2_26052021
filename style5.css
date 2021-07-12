@@ -31,7 +31,7 @@ a {
 #menu {
   display: flex;
   justify-content: space-between;
-  padding: 12px;
+  padding: 10px;
   font-size: 1em;
 }
 /* couleur bleu class hébergement */
@@ -59,14 +59,15 @@ a {
 
 /* padding marge intérieur margin marge extérieur */
 #menu ul li a {
-  padding: 33px;
-  margin: 0 35px;
+  padding: 10px;
+  margin: 0 25px;
 }
 
 /* clique sur les liens survoles */
 #menu ul li a:hover {
   color: #0065fc;
   border-top: 3px #0065fc solid;
+  padding-top: 31px;
 }
 
 /* TITRE */
@@ -109,7 +110,7 @@ a {
   font-weight: bold;
 }
 /* partie extérieur du bouton de recherche */
-#bouton {
+.bouton {
   border-radius: 0 10px 10px 0;
   padding: 10px;
   background-color: #0065fc;
@@ -123,6 +124,19 @@ a {
   cursor: pointer;
 }
 
+/* mise en place du logo loupe */
+.fa-search {
+  color: white;
+  align-items: center;
+}
+
+/* masquer le logo loupe sur ordinateur */
+form button i,
+form button i::before,
+form button i::after {
+  display: none;
+}
+
 /* FILTRES */
 
 /* placement de la barre de filtre */
@@ -132,16 +146,15 @@ a {
   align-items: center;
 }
 
-/* marge exterieur entre la barre de recherche et la barre de filtre */
-.marge_filtre {
-  margin-top: 50px;
-  margin-bottom: 40px;
-}
-
 /* alignement de la barre de filtre */
 .filtre {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: max-content;
+  min-height: 10vh;
+  margin-top: 50px;
+  margin-bottom: 40px;
 }
 
 /* placement du titre filtre */
@@ -153,11 +166,15 @@ a {
 }
 
 /* placement de bordure des différents filtres */
-.filtre_texte {
+.filtre .filtre_texte {
   border: 2px solid #f2f2f2;
   height: 50px;
   border-radius: 30px;
   margin-right: 20px;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* passage au survole de la souris */
@@ -429,12 +446,14 @@ a {
   border-radius: 15px 0 0 15px;
 }
 
+/* centrage des eléments */
 .pop_centre {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* mise en place de contour blanc des imagas et placement */
 .cadre_blancp {
   height: auto;
   background-color: white;
@@ -468,6 +487,7 @@ a {
 
 .titreACT {
   font-family: "ralewaybold";
+  margin-left: 20px;
 }
 
 /* la marge entre le haut et le bas du site */
@@ -632,7 +652,6 @@ a {
   margin-right: 18%;
 }
 
-
 .couleur_footer {
   color: black;
 }
@@ -649,24 +668,459 @@ a {
 
 /* MEDIA QUERIES (TOUJOURS METTRE A LA FIN DU CSS) */
 
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  /* Styles */
+/* MOBILE */
+@media screen and (max-width: 768px) {
+  /* MENU  */
 
-  #Heb_pop {
-    flex-direction: column-reverse;
+  #logo_principal {
+    height: 37px;
+    margin-left: 10px;
   }
 
+  /* positionnement du menu en mobile*/
+  #menu {
+    flex-direction: column;
+    border-bottom: 3px #f2f2f2 solid;
+  }
 
+  #menu:hover {
+    border-bottom: 3px #0065fc solid;
+  }
+
+  #menu_marge {
+    padding-left: 10px;
+  }
+  /* padding marge intérieur margin marge extérieur */
+  #menu ul li a {
+    margin: 80px 0;
+    align-items: center;
+  }
+
+  /* clique sur les liens survoles */
+  #menu ul li a:hover {
+    color: #0065fc;
+    border-top: none;
+    padding-top: 31px;
+  }
+
+  /* placement du menu s'inscire en haut a droit */
+  .sinscrire {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+  }
+
+  /* centrage du menu hebergement */
+  .lien_menuH {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* centrage du menu activité */
+  .lien_menuACT {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 20px;
+  }
+
+  /* LE PREMIER TITRE RECHERCHE */
+
+  #titreh1 {
+    font-size: 1.3rem;
+  }
+
+  /* BARRE DE RECHERCHE */
+
+  /* mise en place du logo loupe mobile */
+  form button i,
+  form button i::before,
+  form button i::after {
+    display: block;
+    color: white;
+  }
+
+  /* masquer le mot rechercher */
+  form button span {
+    display: none;
+  }
+  /* bordure et marge du bouton */
+  .bouton {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-left: 30px;
+  }
+
+  #destination {
+    width: 125%;
+  }
+
+  /*  LES FILTRES */
+  .filtre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: max-content;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: -25px;
+  }
+
+  /* décalage du filtre famille */
+  .famille_right {
+    align-self: flex-end;
+  }
+
+  .eco_moove {
+    margin-bottom: -69px;
+  }
+
+  /* marge entre les bordures et le texte */
+  .couleur_texte {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: small;
+  }
+  /* marge entre les différents filtres */
+  .filtre_texte {
+    margin-top: 15px;
+    margin-left: 40px;
+  }
+
+  /* le titre filtre */
+  .filtreh2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 50px;
+    font-size: medium;
+  }
+
+  /* INFO */
+
+  /* marge entre info et bloc populaire */
+  .info {
+    margin-bottom: 10px;
+  }
+
+  .titreinfo {
+    font-size: 80%;
+  }
+  /* POPULAIRE */
+  #Heb_pop {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  /* supprimé la marge du bloc pop */
+  .bloc_pop {
+    margin-left: 0px;
+  }
+
+  /* titre et icon reglage marge haute */
+  .icon_pop {
+    padding-top: 10px;
+  }
+
+  /* le titre populaire */
+  .titrePOP {
+    font-size: 1.1rem;
+  }
+  /* marge en bas du bloc */
+  .trois_bloc_pop {
+    margin-bottom: 12px;
+  }
+
+  /* diminuer la marge entre les images et la hauteur du cadre blanc */
+  .cadre_blancp {
+    margin-top: 10px;
+    height: 110px;
+  }
+  /*diminution des photos */
+  .imagespopulaires1 {
+    height: 110px;
+  }
+
+  .imagespopulaires2 {
+    height: 110px;
+  }
+
+  .imagespopulaires3 {
+    height: 110px;
+  }
+  /* diminution des liens dans le cadre blanc*/
+  .lien_pop {
+    font-size: small;
+  }
+
+  /* marge réduite entre les liens */
+  .P_pop {
+    margin-bottom: 25px;
+  }
+  /* espace entre les liens populaire*/
+  .line_P_titre {
+    line-height: 15px;
+  }
+
+  /* HEBERGEMENTS */
+
+  /* mise en colonne des images */
+  .ligne1 {
+    flex-direction: column;
+  }
+  /* reduction de la marge entre image (mouette) et image (mer) */
+  .ligne2 {
+    margin-top: -10px;
+  }
+
+  /* les différentes marges et largeur du bloc hébergement */
+  .bloc_heb {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 10px;
+    width: 95%;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white;
+  }
+
+  /* reduction du titre hébergements */
+  #Hebergements {
+    font-size: 1.1rem;
+  }
+
+  /* largeur et marge des images hébergements */
+  .cadre_blanch {
+    width: auto;
+    margin-bottom: 15px;
+    box-shadow: 5px 5px 5px 5px #f2f2f2;
+    padding: 1% 1% 4% 1%;
+  }
+
+  .description_h {
+    font-size: small;
+  }
+
+  /* ACTIVITÉ */
+
+  /* le titre activité */
+  .titreACT {
+    font-size: 1.1rem;
+    margin-left: 25px;
+  }
+
+  /* marge entre section activité et populaire */
+  #Activites {
+    margin-top: 30px;
+  }
+
+  /* positionnement en colonne du bloc activité */
+  .flex_between_act {
+    flex-direction: column;
+  }
+
+  /* la largeur des images 1 et 4 */
+  .display_column_act {
+    width: auto;
+    margin-left: 15px;
+  }
+
+  .imagesactivites1 {
+    height: 150px;
+  }
+
+  .imagesactivites2 {
+    height: 150px;
+  }
+
+  .imagesactivites3 {
+    height: 150px;
+  }
+
+  .imagesactivites4 {
+    height: 150px;
+  }
+  .imagesactivites5 {
+    height: 150px;
+  }
+  .imagesactivites6 {
+    height: 150px;
+  }
+
+  /* les marges entre les photos (grandes) */
+  .cadre_blanc_act {
+    margin-right: 15px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+  }
+
+  /* les marges entre les photos (petites) */
+  .img2356 {
+    margin-bottom: 5px;
+    margin-top: 20px;
+  }
+
+  /* la largeur de l'image et marge */
+  .bloc_activites2356 {
+    width: 95%;
+    margin-right: 15px;
+  }
+
+  .titreh3 {
+    font-size: small;
+  }
+
+  /* FOOTER */
+
+  /* positionnement du footer en colonne */
+  #footer {
+    flex-direction: column;
+    margin-top: 930px;
+    height: 500px;
+    margin-bottom: auto;
+    align-items: flex-start;
+  }
+
+  /* les marges extérieurs et intérieur */
+  #a_propos {
+    margin-left: 20px;
+  }
+
+  #nos_hebergements {
+    margin-left: 20px;
+    padding-top: 25px;
+  }
+
+  #assistance {
+    margin-left: 20px;
+  }
 }
 
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* tablette ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
   /* Styles */
 
+  /* BARRE DE RECHERCHE */
+
+  /* marge général */
+  form {
+    margin-top: 70px;
+  }
+
+  /* la barre de recherche */
+  #destination {
+    width: 90%;
+  }
+
+  /* la loupe */
+  .bouton {
+    margin-left: -30px;
+  }
+
+  /* LES FILTRES */
+
+  /* déplacement de la barre de filtre */
+  .filtre {
+    display: flex;
+    align-items: center;
+    margin-top: -130px;
+  }
+
+  /* positionner les fitlres eco et familial */
+
+  .eco_moove {
+    margin-left: 168px;
+  }
+  .animaux_moove {
+    align-self: flex-end;
+    margin-top: -55px;
+  }
+
+  .roman_moove {
+    margin-left: 160px;
+  }
+
+  .couleur_texte {
+    font-size: 85%;
+  }
+
+  /* le titre filtre */
+  .filtreh2 {
+    margin-left: 340px;
+  }
+
+  /* inversion du bloc pop et hebergements */
   #Heb_pop {
     flex-direction: column-reverse;
   }
 
+  /* BLOC POP */
+
+  /*  replacement du bloc pop */
+  .trois_bloc_pop {
+    display: flex;
+    flex-direction: row;
   }
- 
+
+  /* modif de la taille du cadre de chaque image */
+  .cadre_blancp {
+    width: 30%;
+    height: 90px;
+  }
+
+  /* taille police des liens et titre */
+  .lien_pop {
+    font-size: 70%;
+  }
+
+  .imagespopulaires1 {
+    width: 45%;
+    height: 100px;
+    margin-left: -4px;
+  }
+
+  .imagespopulaires2 {
+    width: 45%;
+    height: 100px;
+    margin-left: -4px;
+  }
+
+  .imagespopulaires3 {
+    width: 45%;
+    height: 100px;
+    margin-left: -4px;
+  }
+
+  /* marge entre les lien */
+  .P_pop {
+    margin-bottom: 15px;
+  }
+
+  /* BLOC HEBERGEMENT */
+
+  /* mise en place du fond gris */
+  .bloc_heb {
+    background-color: #f2f2f2;
+    width: 97%;
+    margin-top: 40px;
+  }
+
+  /* replacement du bloc heb */
+  .ligne1 {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  /* marge entre les images */
+  .cadre_blanch {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 300px;
+    padding-bottom: 10px;
+  }
+
+  /* titre hebergements */
+  #Hebergements {
+    margin-left: 27px;
+  }
+
+  /* BLOC ACTIVITÉ */
+}
