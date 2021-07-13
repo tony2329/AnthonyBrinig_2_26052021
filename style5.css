@@ -996,64 +996,36 @@ form button i::after {
 }
 
 /* tablette ----------- */
-@media only screen and (min-width: 768px) and (max-width: 1400px) {
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
   /* Styles */
 
   /* BARRE DE RECHERCHE */
 
-  /* marge général */
-  form {
-    margin-top: 80px;
-    padding-top: 5px;
-  }
-
-  /* la barre de recherche */
-  #destination {
-    width: 90%;
-  }
-
-  /* la loupe */
-  .bouton {
-    margin-left: -30px;
-  }
-
   /* LES FILTRES */
 
-  /* déplacement de la barre de filtre */
   .filtre {
-    display: flex;
-    align-items: center;
-    margin-top: -130px;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 0px;
   }
 
-  /* positionner les fitlres eco et familial */
-
-  .eco_moove {
-    margin-left: 148px;
-  }
-  .animaux_moove {
-    align-self: flex-end;
-    margin-top: -55px;
-  }
-
-  .roman_moove {
-    margin-left: 140px;
-  }
-
-  /* positionnement du filtre famille */
-  .famille_right {
-    align-self: baseline;
-    margin-left: 540px;
-  }
-
-  /* la taille de police des fitlres */
-  .couleur_texte {
-    font-size: 85%;
-  }
-
-  /* le titre filtre */
   .filtreh2 {
-    margin-left: 340px;
+    position: absolute;
+    left: inherit;
+    margin-right: 700px;
+  }
+
+  .filtre_texte {
+    margin-left: -10px;
+    margin-top: 50px;
+  }
+
+  .famille_right {
+    align-self: flex-start;
   }
 
   /* inversion du bloc pop et hebergements */
