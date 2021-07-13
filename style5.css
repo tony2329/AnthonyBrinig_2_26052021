@@ -977,6 +977,7 @@ form button i::after {
     height: 500px;
     margin-bottom: auto;
     align-items: flex-start;
+    font-size: 90%;
   }
 
   /* les marges extérieurs et intérieur */
@@ -995,14 +996,15 @@ form button i::after {
 }
 
 /* tablette ----------- */
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 768px) and (max-width: 1400px) {
   /* Styles */
 
   /* BARRE DE RECHERCHE */
 
   /* marge général */
   form {
-    margin-top: 70px;
+    margin-top: 80px;
+    padding-top: 5px;
   }
 
   /* la barre de recherche */
@@ -1027,7 +1029,7 @@ form button i::after {
   /* positionner les fitlres eco et familial */
 
   .eco_moove {
-    margin-left: 168px;
+    margin-left: 148px;
   }
   .animaux_moove {
     align-self: flex-end;
@@ -1035,9 +1037,16 @@ form button i::after {
   }
 
   .roman_moove {
-    margin-left: 160px;
+    margin-left: 140px;
   }
 
+  /* positionnement du filtre famille */
+  .famille_right {
+    align-self: baseline;
+    margin-left: 540px;
+  }
+
+  /* la taille de police des fitlres */
   .couleur_texte {
     font-size: 85%;
   }
@@ -1131,6 +1140,11 @@ form button i::after {
 
   #Activites {
     margin-left: -10px;
+    margin-top: 40px;
+  }
+
+  .bloc_activites {
+    margin-bottom: -90px;
   }
 
   /* marge des images 1 et 2 */
@@ -1181,5 +1195,26 @@ form button i::after {
     width: 210px;
     margin-bottom: 57px;
     margin-top: -14px;
+  }
+
+  /* FOOTER */
+
+  /* repositionnement du footer */
+  #footer {
+    margin-top: 0px;
+    flex-direction: row;
+    height: 350px;
+    font-size: 90%;
+  }
+
+  /* modif marge */
+  #nos_hebergements {
+    padding-top: 0%;
+    margin-right: 0px;
+  }
+
+  /* modif marge */
+  #assistance {
+    margin-right: 100px;
   }
 }
