@@ -28,46 +28,54 @@ a {
 /* MENU */
 
 /* mise en place du menu en haut a droite */
-#menu {
+
+nav,
+#menu_marge {
+  width: auto;
   display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  font-size: 1em;
-}
-/* couleur bleu class hébergement */
-#couleur_hb {
-  color: black;
+  justify-content: flex-end;
+  align-items: baseline;
+  margin-top: 0;
 }
 
-/* couleur noir class activité */
-#couleur_act {
-  color: black;
-}
-
-/* couleur bleu en gras class s'inscrire */
-#couleur_ins {
-  color: #0065fc;
-  font-family: "ralewaybold";
-  font-weight: bold;
-}
-/* alignement des liens et puces enlevé */
-#menu ul {
-  display: flex;
-  align-items: center;
+#menu_marge li {
+  padding: 40px 24px 10px 24px;
   list-style-type: none;
+  font-size: 14px;
+  color: black;
 }
 
-/* padding marge intérieur margin marge extérieur */
-#menu ul li a {
-  padding: 10px;
-  margin: 0 25px;
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-/* clique sur les liens survoles */
-#menu ul li a:hover {
+a:visited {
+  color: inherit;
+}
+
+#menu_marge li:hover {
+  border-top: 2px #0065fc solid;
   color: #0065fc;
-  border-top: 3px #0065fc solid;
-  padding-top: 31px;
+}
+
+#logo_principal {
+  position: absolute;
+  height: 50px;
+  margin: 25px 20px;
+}
+
+.inscrire:hover {
+  border-top: 2px #0065fc solid;
+  color: #0065fc;
+}
+
+nav .inscrire {
+  color: #0065fc;
+  font-size: 14px;
+  font-family: "ralewaybold";
+  padding: 40px 24px 10px 24px;
 }
 
 /* TITRE */
@@ -678,48 +686,34 @@ form button i::after {
   }
 
   /* positionnement du menu en mobile*/
-  #menu {
-    flex-direction: column;
-    border-bottom: 3px #f2f2f2 solid;
+  nav {
+    width: 100%;
+    flex-direction: column-reverse;
   }
 
-  #menu:hover {
-    border-bottom: 3px #0065fc solid;
+  .inscrire {
+    align-self: flex-end;
   }
 
   #menu_marge {
-    padding-left: 10px;
-  }
-  /* padding marge intérieur margin marge extérieur */
-  #menu ul li a {
-    margin: 80px 0;
-    align-items: center;
+    width: 100%;
+    padding: 0;
   }
 
-  /* clique sur les liens survoles */
-  #menu ul li a:hover {
-    color: #0065fc;
+  #menu_marge li {
+    width: 50%;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px #f2f2f2 solid;
+  }
+
+  #menu_marge li:hover {
     border-top: none;
-    padding-top: 31px;
+    border-bottom: 2px #0065fc solid;
   }
 
-  /* placement du menu s'inscire en haut a droit */
-  .sinscrire {
-    position: absolute;
-    right: 20px;
-    top: 30px;
-  }
-
-  /* centrage du menu hebergement */
-  .lien_menuH {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  /* centrage du menu activité */
-  .lien_menuACT {
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 20px;
+  #menu_marge li:active {
+    border-bottom: 2px #0065fc solid;
   }
 
   /* LE PREMIER TITRE RECHERCHE */
@@ -1188,5 +1182,92 @@ form button i::after {
   /* modif marge */
   #assistance {
     margin-right: 100px;
+  }
+}
+
+/* tablette ----------- */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  .bloc_pop {
+    margin-left: 0px;
+  }
+
+  /* les filtres */
+  .filtreh2 {
+    margin-left: -100px;
+    margin-top: -6px;
+  }
+  .filtre {
+    margin-left: -50px;
+    margin-bottom: 20px;
+  }
+
+  /* bloc populaire */
+
+  .cadre_blancp {
+    height: 120px;
+  }
+
+  .imagespopulaires1 {
+    height: 130px;
+  }
+
+  .imagespopulaires2 {
+    height: 130px;
+  }
+
+  .imagespopulaires3 {
+    height: 130px;
+  }
+  /* bloc activite */
+  #Activites {
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 90px;
+  }
+
+  .imagesactivites1 {
+    height: 170px;
+    width: 100%;
+  }
+
+  .imagesactivites4 {
+    height: 170px;
+    width: 100%;
+  }
+
+  .imagesactivites2 {
+    height: 170px;
+  }
+
+  .imagesactivites3 {
+    height: 170px;
+  }
+
+  .imagesactivites5 {
+    height: 170px;
+  }
+
+  .imagesactivites6 {
+    height: 170px;
+  }
+
+  .bloc_activites2356 {
+    width: 25%;
+  }
+
+  .position_haute {
+    margin-left: 0px;
+    width: 30%;
+  }
+
+  .position_bas {
+    margin-left: -168px;
+    margin-bottom: 70px;
+    width: 30%;
+  }
+
+  .img2356 {
+    width: 120%;
+    margin-left: -50px;
   }
 }
