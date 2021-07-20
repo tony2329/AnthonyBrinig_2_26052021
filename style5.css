@@ -29,13 +29,19 @@ a {
 
 /* mise en place du menu en haut a droite */
 
+#logo_principal {
+  position: absolute;
+  height: 50px;
+  margin: 25px 20px;
+}
+
 nav,
 #menu_marge {
   width: auto;
   display: flex;
   justify-content: flex-end;
   align-items: baseline;
-  margin-top: 0;
+  margin-top: 0px;
 }
 
 #menu_marge li {
@@ -49,6 +55,7 @@ a {
   color: black;
   text-decoration: none;
   cursor: pointer;
+  font-size: 18px;
 }
 
 a:visited {
@@ -60,12 +67,6 @@ a:visited {
   color: #0065fc;
 }
 
-#logo_principal {
-  position: absolute;
-  height: 50px;
-  margin: 25px 20px;
-}
-
 .inscrire:hover {
   border-top: 2px #0065fc solid;
   color: #0065fc;
@@ -73,7 +74,7 @@ a:visited {
 
 nav .inscrire {
   color: #0065fc;
-  font-size: 14px;
+  font-size: 18px;
   font-family: "ralewaybold";
   padding: 40px 24px 10px 24px;
 }
@@ -296,6 +297,11 @@ form button i::after {
   flex-direction: column;
   justify-content: space-around;
 }
+
+.prix_gras {
+  font-family: "ralewaybold";
+}
+/* BLOC HEBERGEMENTS */
 
 /* modif taille et postionnement photos */
 .imageshebergements1 {
@@ -686,6 +692,7 @@ form button i::after {
   }
 
   /* positionnement du menu en mobile*/
+
   nav {
     width: 100%;
     flex-direction: column-reverse;
@@ -693,6 +700,7 @@ form button i::after {
 
   .inscrire {
     align-self: flex-end;
+    margin-top: -5px;
   }
 
   #menu_marge {
@@ -893,6 +901,22 @@ form button i::after {
     font-size: small;
   }
 
+  .titre_heb {
+    font-size: 13px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .couleur_etoileB {
+    font-size: 13px;
+  }
+
+  .couleur_etoileG {
+    font-size: 13px;
+  }
+
   /* ACTIVITÉ */
 
   /* le titre activité */
@@ -986,6 +1010,10 @@ form button i::after {
 
   #assistance {
     margin-left: 20px;
+  }
+
+  .couleur_footer {
+    font-size: 13px;
   }
 }
 
@@ -1102,6 +1130,18 @@ form button i::after {
     margin-left: 27px;
   }
 
+  .titre_heb {
+    font-size: 13px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .couleur_etoileB {
+    font-size: 13px;
+  }
+
   /* BLOC ACTIVITÉ */
 
   #Activites {
@@ -1183,6 +1223,10 @@ form button i::after {
   #assistance {
     margin-right: 100px;
   }
+
+  .couleur_footer {
+    font-size: 13px;
+  }
 }
 
 /* tablette ----------- */
@@ -1218,6 +1262,37 @@ form button i::after {
   .imagespopulaires3 {
     height: 130px;
   }
+  .titre_pop {
+    font-size: 15px;
+  }
+
+  .P_pop {
+    font-size: 15px;
+  }
+
+  .couleur_etoileB {
+    font-size: 15px;
+  }
+
+  /* bloc hebergement */
+
+  .bloc_heb {
+    width: 96%;
+    margin-left: 18px;
+  }
+
+  .titre_heb {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .couleur_etoileG {
+    font-size: 16px;
+  }
+
   /* bloc activite */
   #Activites {
     margin-right: 0px;
@@ -1269,5 +1344,9 @@ form button i::after {
   .img2356 {
     width: 120%;
     margin-left: -50px;
+  }
+
+  .titreh3 {
+    font-size: 15px;
   }
 }
