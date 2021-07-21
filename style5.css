@@ -985,6 +985,10 @@ form button i::after {
   .titreh3 {
     font-size: small;
   }
+  /* afficher plus */
+  #gras {
+    margin-left: 30px;
+  }
 
   /* FOOTER */
 
@@ -1348,5 +1352,10 @@ form button i::after {
 
   .titreh3 {
     font-size: 15px;
+  }
+
+  #gras {
+    margin-top: 20px;
+    margin-left: 25px;
   }
 }
